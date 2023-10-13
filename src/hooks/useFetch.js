@@ -7,24 +7,29 @@ function useFetch(url, callback) {
 
     useEffect(() => {
         async function fetchData() {
+            if (!url) return;
             try {
                 const response = await fetch(url);
 
-                if (!response.ok) {
+                if (!response.ok || response.status !== 200) {
                     throw new Error("Network response was not ok");
                 }
 
-                let data = await response.json();
-                if (callback) {
-                    data = callback(data);
+                const contentType = response.headers.get("content-type");
+
+                if (contentType && contentType.includes("application/json")) {
+                    let data = await response.json();
+                    if (callback) {
+                        data = callback(data);
+                    }
+                    setData(data);
+                    if (data) {
+                        setLoading(false);
+                    }
                 }
-                setData(data);
-                if (data) {
-                    setLoading(false);
-                }
-                setError(null);
             } catch (error) {
                 setError(error);
+                setLoading(false);
             }
         }
         fetchData();
