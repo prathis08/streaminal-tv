@@ -99,7 +99,7 @@ export default function MoviePage() {
                         </h1>
                     )}
 
-                    {!true ? (
+                    {!movieDetailsError ? (
                         movieDetailsLoading ? (
                             <SeasonsSkeletonLoader />
                         ) : (
