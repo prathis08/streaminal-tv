@@ -4,5 +4,5 @@ export const API_ENDPOINTS = {
     GET_TRENDING_MOVIES: "get-trending-movies/",
     GET_TRENDING_SHOWS: "get-trending-tv-shows/",
     GET_LATEST_MOVIES: "get-latest-movies/",
-    GET_LATEST_SHOWS: "get-latest-tv-shows/"
-}
+    GET_LATEST_SHOWS: "get-latest-tv-shows/",
+};

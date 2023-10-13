@@ -1,53 +1,53 @@
 .footerContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 
-  height: 160px;
-  width: 100vw;
-  padding: 20px 40px;
-  margin-top: 40px;
+    height: 160px;
+    width: 100vw;
+    padding: 20px 40px;
+    margin-top: 40px;
 
-  box-shadow: rgb(0 0 0 / 16%) 0px 1px 8px;
-  background-color: var(--black);
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 8px;
+    background-color: var(--black);
 }
 
 .logo {
-  width: 200px;
+    width: 200px;
 }
 
 .text {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .github {
-  width: 30px;
-  margin-top: 10px;
+    width: 30px;
+    margin-top: 10px;
 }
 
 .footerCopyrights {
-  background-color: var(--orange);
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  color: var(--black);
-  font-weight: bold;
-  font-size: 1rem;
+    background-color: var(--orange);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .logo {
-    width: 180px;
-  }
+    .logo {
+        width: 180px;
+    }
 
-  .footerContainer {
-    height: 140px;
-    padding: 10px 20px;
-    margin-top: 20px;
-  }
+    .footerContainer {
+        height: 140px;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
 
-  .footerCopyrights {
-    padding: 14px;
-  }
+    .footerCopyrights {
+        padding: 14px;
+    }
 }

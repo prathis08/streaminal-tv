@@ -8,8 +8,19 @@ export default function Header({ style }) {
 
     return (
         <div className={styles.header} style={style}>
-            <img src="/logo.png" alt="logo" className={styles.logo} onClick={() => { navigate("/") }} />
-            <SearchBar onSearch={(q) => { navigate(`/search/${q}`); }} />
+            <img
+                src="/logo.png"
+                alt="logo"
+                className={styles.logo}
+                onClick={() => {
+                    navigate("/");
+                }}
+            />
+            <SearchBar
+                onSearch={(q) => {
+                    navigate(`/search/${q}`);
+                }}
+            />
         </div>
-    )
+    );
 }
