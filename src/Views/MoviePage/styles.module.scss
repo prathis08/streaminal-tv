@@ -1,0 +1,45 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin: 25px 0;
+}
+
+.movieDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+
+    padding-bottom: 60px;
+    background-color: var(--darkBlack);
+    color: var(--white);
+}
+
+.infoAndSeasons {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainDiv {
+        margin: 20px 0;
+    }
+
+    .infoAndSeasons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 100%;
+
+        row-gap: 20px;
+        padding: 0 20px;
+    }
+}
