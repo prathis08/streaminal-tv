@@ -1,0 +1,19 @@
+.videoDiv {
+    width: 100%;
+    height: 80vh;
+    color: white;
+    background-color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .videoDiv {
+        height: 34vh;
+    }
+}
+
+.errorImage {
+    height: 100%;
+
+    margin: auto;
+    object-fit: cover;
+}
