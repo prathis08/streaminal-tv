@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./styles.module.scss";
 
 export default function MovieCard({ title, type, image, releaseDate }) {
@@ -13,10 +11,11 @@ export default function MovieCard({ title, type, image, releaseDate }) {
                     currentTarget.onerror = null; // prevents looping
                     currentTarget.src = "/logo512.png";
                 }}
+                loading="lazy"
             />
             <div className={styles.movieTitle}>{title}</div>
             <div className={styles.tag}>{type}</div>
             <div className={styles.movieReleaseDate}>{releaseDate}</div>
         </div>
-    )
+    );
 }
