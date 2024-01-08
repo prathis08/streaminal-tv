@@ -1,5 +1,5 @@
 export const API_ENDPOINTS = {
-    CONSUMET_URL: "https://consumet-chi.vercel.app/",
+    CONSUMET_URL: "https://consumet-api-hoyq.onrender.com/",
     STREAMINAL_API_URL: "https://streaminal-api-livid.vercel.app/",
     GET_TRENDING_MOVIES: "get-trending-movies/",
     GET_TRENDING_SHOWS: "get-trending-tv-shows/",
