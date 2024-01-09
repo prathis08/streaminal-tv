@@ -1,4 +1,3 @@
-
 # Streaminal TV
 
 Streaminal is an open-source project that provides a website for streaming movies, TV shows, and more, all for free.
